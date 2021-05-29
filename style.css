@@ -1,0 +1,37 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+}
+
+a{
+	text-decoration: none;
+}
+
+li{
+	list-style: none;
+}
+
+img{
+	max-width: 100%;
+	max-height: 100%;
+} 
+
+/* bagian pertama */
+#one {
+	background: url('assets/images/workspace-1280538_1920.jpg') no-repeat; 
+	background-size: cover; 
+	-webkit-background-size: cover; 
+	-o-background-size: cover;
+	-ms-background-size: cover;
+	-moz-background-size: cover;
+
+	height: 650px ; 
+	padding-top: 20px;
+}
+
+.content{
+	width:960px;
+	margin: 0 auto;
+}
