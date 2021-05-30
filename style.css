@@ -20,7 +20,7 @@ img{
 
 /* bagian pertama */
 #one {
-	background: url('assets/images/workspace-1280538_1920.jpg') no-repeat; 
+	background: url('assets/images/workspace.jpg') no-repeat; 
 	background-size: cover; 
 	-webkit-background-size: cover; 
 	-o-background-size: cover;
@@ -28,10 +28,112 @@ img{
 	-moz-background-size: cover;
 
 	height: 650px ; 
-	padding-top: 20px;
+	padding-top: 20px; 
+} 
+
+.clear {
+	clear:both; 
 }
 
-.content{
-	width:960px;
+.content{ 
+	width:960px; 
+	margin: 0 auto; 
+} 
+
+.column_3 { 
+	width: 300px; float: left; 
+} 
+
+.column_3_middle {
+	margin: 0 30px;
+}
+
+#logo {
+	display: block; width: 100px; margin: 0 auto;
+}
+
+#menu {
+	background-color: #0074b9;
+	height: 50px; line-height: 50px;
+	font-size: 20px; margin-top: 20px;
+}
+
+#menu a{
+	display: block; text-align: center; color: white;
+}
+
+#menu a:hover{
+	background-color: #2c9ddd;
+}
+
+#box_sd{
+	background-color: rgba(44, 155, 221,0.7);
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	margin: 80px 0;
+	padding: 20px 0; 
+} 
+
+#box_sd a {
+	display: block; 
+	border: 2px solid white;
+	color: white;
+	padding: 5px 0;
+	width: 300px;
+	margin: 25px auto 0 auto; 
+}
+
+#box_sd a:hover{
+	background-color: white; 
+	color: #007b49; 
+}
+
+/* bagian kedua */
+
+#two {
+	background-color: #0074b9;
+	color: white;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+h2 {
+	font-size: 40px;
+	padding: 30px 0 45px 0;
+	width: 250px;
 	margin: 0 auto;
 }
+
+#two img{
+	width: 250px;	height: 250px;
+	border-radius: 50%; 
+	margin-bottom: 20px;
+}
+.every_image_of_project{
+	position: relative;
+}
+
+.every_image_of_project p{
+	position: absolute;
+	top: 0px; left:25px;
+	width: 250px;
+	height: 250px;
+	line-height: 250px;
+	text-align: center; font-size: 25px;
+	background-color: rgba(225, 255, 255, 0.8);
+	color: #0074b9;
+	border-radius: 50%; 
+	display: none; 
+} 
+
+.every_image_of_project:hover p{
+	display: block; 
+}
+
+.description {
+	font-size: 22px; 
+}
+
+/*bagian ketiga*/
+
