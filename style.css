@@ -164,13 +164,67 @@ input[type="submit"]{
 	color: white;
 }
 
-input[type="submit"]:hover{
+input[type="submit"]:hover, .arrow_box:hover{
 	cursor: pointer;
 	background-color: #148fd7;
 }
 
 #three iframe{
 	max-width: 450px;
+}
+
+/*-- every project section --*/
+.arrow_box{
+	width: 60px; height: 60px; line-height: 60px; 
+	color: white; background-color: #0074b9; 
+	text-align: center; 
+	font-size: 30px; 
+	margin-top: 180px; 
+}
+
+#project_box { 
+	width: 800px; 
+	margin: 0 20px; 
+} 
+
+.arrow_box, #project_box, #project_box_left, #project_box_right {
+	float: left; 
+} 
+
+#project_box_right {
+	width: 500px; height: 350px;
+}
+
+#project_box_left {
+	width: 280px; padding: 30px 10px 0 10px; 
+	height: 320px;
+	background-color: #0074b9;
+	color: white;
+}
+
+#project_box_left h3{
+	font-size: 30px;
+	margin-bottom: 30px;
+}
+
+#project_box_left .description {
+	font-size: 18px;
+}	
+
+#another_projects {
+	width: 450px; margin: 50px auto 0 auto;
+}
+
+#another_projects img {
+	display: block;
+	float: left;
+	width: 140px;
+	margin-left: 10px; 
+}
+
+.error {
+	color: red; 
+	margin-top: -12px; 
 }
 
 /*-- bagian footer --*/
