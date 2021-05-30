@@ -14,8 +14,8 @@
 			<div id="menu">
 				<div class="content">
 					<a href="#one" class="column_3">Hello</a>
-					<a href="#two" class="column_3 column_3_middle">Project</a>
-					<a href="#three" class="column_3">Contact</a>
+					<a href="#two" class="column_3 column_3_middle" onClick="return smoothScroll('two')">Project</a>
+					<a href="#three" class="column_3"  onClick="return smoothScroll('three')">Contact</a>
 				</div>
 			</div>
 		</div>
@@ -74,9 +74,10 @@
 			<h2>Contact</h2>
 
 			<div class="column_2">
-				<form action="">
+				<form action="" novalidate onSubmit="return validasi(this)"> 
+
 					<input type="text" name="name" placeholder="Name">
-					<input type="email" name="email" placeholder="Name">
+					<input type="email" name="email" placeholder="Email">
 					<textarea name="pesan" placeholder="pesan" rows="8" cols="40"></textarea>
 					<input type="submit" name="submit" value="Kirim">
 				</form>
@@ -92,7 +93,7 @@
 		<div id="footer"> 
 			<p> &copy; Copyright 2021</p> 
 		</div> 
-	</div> 
 
+<script src="portofolio.js"></script>
 	</body> 
 </html> 
