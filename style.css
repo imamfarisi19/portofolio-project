@@ -1,9 +1,10 @@
-*{
-	margin: 0px;
-	padding: 0px;
-	font-family: 'Roboto', sans-serif;
-	font-weight: normal;
-}
+*{ 
+	margin: 0px; 
+	padding: 0px; 
+	font-family: 'Roboto', sans-serif; 
+	font-weight: normal; 
+	max-width: 100% !important; 
+} 
 
 a{
 	text-decoration: none;
@@ -41,11 +42,12 @@ img{
 } 
 
 .column_3 { 
-	width: 300px; float: left; 
+	width: 31%; 
+	float: left; 
 } 
 
 .column_3_middle {
-	margin: 0 30px;
+	margin: 0 3%;
 }
 
 #logo {
@@ -57,6 +59,13 @@ img{
 	height: 50px; line-height: 50px;
 	font-size: 20px; margin-top: 20px;
 }
+
+#menu_text {
+	display: none;
+	color: white;
+	padding-left: 10px;
+}
+
 
 #menu a{
 	display: block; text-align: center; color: white;
@@ -138,8 +147,8 @@ h2 {
 /*bagian ketiga*/
 .column_2{
 	float: left;
-	width: 450px;
-	margin: 0px 15px;
+	width: 46%;
+	margin: 0px 1.5%;
 }
 
 #three h2 {
@@ -235,3 +244,81 @@ input[type="submit"]:hover, .arrow_box:hover{
 	padding: 10px 0;
 	margin-top: 20px;
 }
+
+@media only screen and (max-width: 1024px) {
+	#box_sd {
+		font-size: 26px;
+	}
+
+	#one {
+		height: auto;
+	}
+
+	h2 {
+		font-size: 34px;
+	}
+
+	.every_image_of_project p {
+		position: static;
+		margin: 0 auto;
+		display: block; 
+		height: auto; 
+		color: white; 
+		background-color: transparent;
+		line-height: normal;
+	}
+}
+
+@media only screen and (max-width: 480px){
+	.column_3, .column_2 {
+		width: 90%;
+		margin: 0 auto;
+		float: none;
+	}
+
+	#box_sd {
+		font-size: 13px;
+		margin: 10px 0;
+	}
+
+	h2 {
+		font-size: 25px;
+	}
+
+	#two img {
+		width: 200px; height: 200px;
+	}
+
+	#two p {
+		font-size: 18px;
+	}
+
+	#two .column_3 {
+		margin: 10px auto;
+	}
+
+	/*-- untuk nav menu --*/ 
+	#menu .content{
+		max-height: 0;
+		overflow: hidden;
+	}
+
+	#menu_text {
+		display: block;
+	}
+
+	.menu_open {
+		max-height: 100% !important;
+	}
+
+	#menu {
+		height: auto; 
+		font-size: 15px; 
+	}
+
+	#menu a {
+		border-bottom: 1px solid white;
+	}
+}
+
+
