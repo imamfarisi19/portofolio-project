@@ -6,13 +6,15 @@
 		<link rel="stylesheet" href="style.css">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,500;1,500&family=Roboto:wght@500&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head> 
 	<body> 	
 	<div id="one">
 		<div id ="header">
 			<img src="assets/logo/Rubber-duck.svg" id="logo" alt="" />
 			<div id="menu">
-				<div class="content">
+				<div id="menu_text" onclick="toggleMenu();">Menu</div>
+				<div class="content" id="menu_3">
 					<a href="#one" class="column_3">Hello</a>
 					<a href="#two" class="column_3 column_3_middle" onClick="return smoothScroll('two')">Project</a>
 					<a href="#three" class="column_3"  onClick="return smoothScroll('three')">Contact</a>
