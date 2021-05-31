@@ -85,3 +85,9 @@ function ganti_sesudah() {
 
 	target_gambar.src = array_gambar[no_sekarang].getAttribute("src");
 }
+
+function toggleMenu() {
+	var menu = document.getElementById('menu_3');
+	// IE > 10 
+	menu.classList.toggle('menu_open');
+}
