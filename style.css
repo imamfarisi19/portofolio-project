@@ -245,6 +245,10 @@ input[type="submit"]:hover, .arrow_box:hover{
 	margin-top: 20px;
 }
 
+#nav_icon {
+	display: none;
+}
+
 @media only screen and (max-width: 1024px) {
 	#box_sd {
 		font-size: 26px;
@@ -267,9 +271,59 @@ input[type="submit"]:hover, .arrow_box:hover{
 		background-color: transparent;
 		line-height: normal;
 	}
+
+	/*- untuk halaman portofolio -*/
+
+	#project_box, #project_box_left, #project_box_right {
+		float: none;
+		width: 90%;
+		margin: 0 auto;
+		height: auto;
+	}
+
+	#project_box img {
+		width: 100%;
+	}
+
+	#project_box_left {
+		padding: 2%;
+		width: 86%; 
+	}
+
+	.arrow_box {
+		position: fixed;
+		top: 30%; 
+	}
+
+	.project_box_right {
+		right: 0%;
+	}
+	
+	.project_box_left {
+		left: 0%;
+	}
+
+	#another_projects img {
+		width: 30%;
+	}
 }
 
 @media only screen and (max-width: 480px){
+	#one {
+		background-attachment: fixed;
+	}
+
+	#menu {
+		position: relative;
+	}
+
+	#nav_icon {
+		display: block;
+		position: absolute;
+		top: 15px;
+		right: 10px;
+	}
+
 	.column_3, .column_2 {
 		width: 90%;
 		margin: 0 auto;
